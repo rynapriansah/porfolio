@@ -56,13 +56,8 @@ header {
 .header-right a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
+/* hero */
 .top-wrapper {
   margin-top: 50px;
   height: 500px;
@@ -108,3 +103,6 @@ header {
     width: 100%;
 }
 
+.contact {
+  min-height: 800px;
+}

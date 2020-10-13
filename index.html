@@ -3,24 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="style.css">
 	<title>Porfolio</title>
 </head>
 <body>
-	<!-- navbar -->
-	<header>
-		<div class="container">
-			<div class="header-left">
-			<a href=""> Curricum Vitae</a>
-			</div>
-			<span class="fa fa-bars menu-icon"></span>
-			<div class="header-right">
-				<a href="#">About</a>
-				<a href="#">Porfolio</a>
-				<a href="linkedin.com/in/rian-apriansyah-788aa0194/">Contact</a>
-			</div>
-		</div>
-	</header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+  <a class="navbar-brand" href="#">Curriculum Vitae</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link active" href="#">Home </a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Work Experience</a>
+      <a class="nav-link" href="#">Eduction</a>
+      <a class="nav-link" href="#">Skils</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Porfolio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Apps Web</a>
+          <a class="dropdown-item" href="#">Apps PWA</a>
+          <a class="dropdown-item" href="#">Apps Android</a>
+        </div>
+      </li>
+    </div>
+  </div>
+  </div>
+</nav>
 	<!-- hero -->
 	<div class="top-wrapper">
 		<img src="img/r.jpeg" alt="">
@@ -35,7 +50,8 @@
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, culpa esse? Nulla quaerat sapiente fugiat saepe, fugit impedit suscipit optio autem cupiditate rerum sunt corrupti a praesentium modi! Ullam, expedita?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam optio sapiente ex nesciunt delectus, earum quibusdam illo placeat nemo, architecto nostrum facere temporibus reprehenderit perferendis sequi? Odio debitis voluptates deleniti.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum nostrum maxime deleniti vitae, itaque perferendis laborum nam quisquam eos. Temporibus est porro iusto quisquam iure in consequatur ratione totam.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto unde, similique perspiciatis nulla et excepturi corrupti doloribus eius, iste placeat vitae eligendi molestias numquam sint non, dicta repellat iure.</p>
 		</div>
 	</section>
-	<h2>Porfolio</h2>
+	<!-- porfolio -->
+	<h2>Work Experience</h2>
 	<div class="flex-container">
 		<div class="card">
 			<img src="img/sribu.PNG" alt="Avatar" >
@@ -81,10 +97,53 @@
 		</div>
 	</div>
 
+	<section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="masukkan email">
+              </div>
+              <div class="form-group">
+                <label for="telp">No Telepon</label>
+                <input type="tel" id="telp" class="form-control" placeholder="masukkan no telepon">
+              </div>
+              <select class="form-control">
+                <option>-- Pilih Kategori --</option>
+                <option>Web Design</option>
+                <option>Web Development</option>
+              </select>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <footer>		
 		<p> &copy;Copyright 2020</p>
 	</div>
 </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
 </body>
 </html>
